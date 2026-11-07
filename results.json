@@ -1,0 +1,68 @@
+{
+  "res": {
+    "Logistic Regression": {
+      "roc_auc": 0.8994742126750215,
+      "pr_auc": 0.308263102476131,
+      "threshold": 0.9540482324255914,
+      "precision": 0.40585774058577406,
+      "recall": 0.2878338278931751,
+      "f1": 0.3368055555555556,
+      "tp": 97,
+      "fp": 142,
+      "fn": 240,
+      "tn": 39521,
+      "fpr": 0.0035801628721982702,
+      "validation_pr_auc": 0.3406193179392699
+    },
+    "Random Forest": {
+      "roc_auc": 0.9103078076713222,
+      "pr_auc": 0.5720561953167664,
+      "threshold": 0.45239620634760713,
+      "precision": 0.49160671462829736,
+      "recall": 0.6083086053412463,
+      "f1": 0.5437665782493368,
+      "tp": 205,
+      "fp": 212,
+      "fn": 132,
+      "tn": 39451,
+      "fpr": 0.00534503189370446,
+      "validation_pr_auc": 0.5106835791417215
+    },
+    "Gradient Boosting (HGB)": {
+      "roc_auc": 0.9170042474314947,
+      "pr_auc": 0.5502471317371939,
+      "threshold": 0.9186183492424635,
+      "precision": 0.44166666666666665,
+      "recall": 0.629080118694362,
+      "f1": 0.5189718482252142,
+      "tp": 212,
+      "fp": 268,
+      "fn": 125,
+      "tn": 39395,
+      "fpr": 0.006756927110909412,
+      "validation_pr_auc": 0.48636996256935067
+    }
+  },
+  "best": "Random Forest",
+  "n_train": 120000,
+  "n_validation": 40000,
+  "n_test": 40000,
+  "fraud_train": 1010,
+  "fraud_validation": 337,
+  "fraud_test": 337,
+  "selection_metric": "validation PR-AUC",
+  "avg_fraud_amt": 2389.1793762534217,
+  "saved": 489781.7721319514,
+  "missed": 315371.67766545166,
+  "alerts_per_10k": 104.25,
+  "top_features": [
+    "new_payee",
+    "remote_access_app",
+    "amount_ratio",
+    "collect_request",
+    "payee_age_days",
+    "hour",
+    "velocity_1h",
+    "geo_km"
+  ]
+}
